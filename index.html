@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrés López | Estructuración de soluciones tecnológicas</title>
+<meta name="description" content="Estructuración de soluciones tecnológicas, gestión de proyectos y modelado de datos. Portafolio de Andrés López.">
+<link rel="icon" href="./assets/logo-al.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <i class="bl b1"></i><i class="bl b2"></i><i class="bl b3"></i>
+  <svg class="hexes" viewBox="0 0 800 800" fill="none" stroke="currentColor">
+    <polygon class="hx h1" points="400,20 729,210 729,590 400,780 71,590 71,210"/>
+    <polygon class="hx h2" points="400,130 634,265 634,535 400,670 166,535 166,265"/>
+    <polygon class="hx h3" points="400,240 539,320 539,480 400,560 261,480 261,320"/>
+  </svg>
+  <i class="glow"></i>
+</div>
+<div class="bar" id="bar"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span class="vis logo-vis" data-visual="mark"><img src="./assets/logo-al.png" data-base="logo-al" alt="Monograma AL"></span>
+      <span class="brand-name">Andrés López</span>
+    </a>
+    <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <nav id="menu" class="menu">
+      <a href="#quien-soy">Quién soy</a><a href="#proyectos">Proyectos</a><a href="#capacidades">Capacidades</a><a href="#tecnologias">Tecnologías</a><a href="#hobbies">Deportes y hobbies</a><a href="#contacto">Contacto</a>
+      <i class="ind" aria-hidden="true"></i>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker mono rv"><i></i>ANDRÉS LOPEZ · SOLUCIONES, DATOS & PROYECTOS</p>
+        <h1 data-split>Orden, datos y proyectos con criterio técnico.</h1>
+        <p class="lead rv">Estructuración de soluciones tecnológicas, gestión de proyectos y modelado de datos aplicados a casos reales y de negocio.</p>
+        <div class="actions rv">
+          <a class="btn btn-brass mag" href="#proyectos"><span>Ver casos de estudio</span><i aria-hidden="true">→</i></a>
+          <a class="btn btn-line mag" href="#contacto"><span>Contactar</span></a>
+        </div>
+      </div>
+      <div class="hero-visual rv" id="heroVisual" data-rv="scale">
+        <svg class="orbit" viewBox="0 0 400 400" fill="none" aria-hidden="true"><circle cx="200" cy="200" r="190" stroke-dasharray="2 10"/><circle cx="200" cy="200" r="150"/><circle class="dot" cx="200" cy="10" r="6"/></svg>
+        <div class="mark-stage"><span class="vis mark-vis" data-visual="mark"><img src="./assets/logo-al.png" data-base="logo-al" alt="Monograma hexagonal AL"></span></div>
+      </div>
+    </div>
+    <div class="wrap">
+      <ul class="facts rv">
+        <li><b><span data-count="4">4</span></b><span>semestres culminados</span></li>
+        <li><b><span data-count="2">2</span></b><span>semilleros de investigación</span></li>
+       
+        <li><b>Habilidades blandas </b><span> Comunicación, trabajo en equipo y resolución de problemas</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="quien-soy" class="section">
+    <div class="wrap">
+      <header class="head rv"><h2>Quién soy</h2></header>
+      <div class="about">
+        <div class="about-main rv" data-rv="left">
+          <p class="big">Andrés López — Estudiante de Ingeniería de Sistemas en la Universidad de Santander (UDES, Campus Cúcuta) e integrante activo de dos de sus semilleros de investigación, con enfoque en la estructuración de soluciones tecnológicas. Mis áreas de interés y trabajo integran la gestión de proyectos, el modelado de datos y el desarrollo, articulando el rigor metodológico de la investigación académica con la ejecución práctica en entornos comerciales y del sector inmobiliario.</p>
+        </div>
+        <div class="about-side">
+          <p class="rv">Mi criterio profesional parte de analizar, ordenar y documentar la lógica y la información antes de pasar a la construcción, garantizando sistemas coherentes, mantenibles y orientados a resultados.</p>
+          <ol class="flow">
+            <li class="rv"><span class="fi" data-icon="process"></span><h3>Ordenar</h3><p>Entender el problema, los actores y los datos.</p></li>
+            <li class="rv"><span class="fi" data-icon="tree"></span><h3>Modelar</h3><p>Definir variables, estructuras y reglas de negocio.</p></li>
+            <li class="rv"><span class="fi" data-icon="code"></span><h3>Construir</h3><p>Implementar con tecnología simple y documentada.</p></li>
+          </ol>
+        </div>
+      </div>
+      <ul class="fields rv">
+        <li><b>Sector inmobiliario</b><span>Catálogos, valoración y datos de inmuebles</span></li>
+        <li><b>Investigación académica</b><span>Semilleros, ponencias y LaTeX</span></li>
+        <li><b>Desarrollo web</b><span>HTML, CSS, JavaScript y Firebase</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section light">
+    <div class="wrap">
+      <header class="head rv"><h2>Proyectos y casos de estudio</h2></header>
+      <div class="filters rv" role="group" aria-label="Filtrar proyectos">
+        <button class="ft is-active" data-filter="all">Todos</button><button class="ft" data-filter="web">Web</button><button class="ft" data-filter="datos">Datos</button><button class="ft" data-filter="investigacion">Investigación</button>
+        <i class="find" aria-hidden="true"></i>
+      </div>
+      <div class="cases" id="cases">
+        <article class="case rv" data-cat="web datos">
+         
+          <span class="vis case-vis logo-fit" data-visual="troya"><img src="./assets/Logo fondo png.png" data-base="Logo fondo png" alt="Logo de TROYA"></span>
+          <div class="case-body">
+            <h3>TROYA</h3>
+            <p class="sub">Sistema web automatizado para la valoración y análisis de inmuebles.</p>
+            <div class="tags mono"><span>HTML</span><span>CSS</span><span>JS</span><span>TS</span><span>Firebase</span></div>
+            <button class="toggle" aria-expanded="false"><span>Ver estructura</span><b></b></button>
+            <div class="detail"><ol class="path">
+              <li><h4>Contexto</h4><p>Iniciativa propia vinculada a un semillero, para su divulgación en SEMDIC y VIII EISI.</p></li>
+              <li><h4>Estructura y modelado</h4><p>Variables y lógica de valoración inmobiliaria, implementadas con HTML, CSS, JavaScript, TypeScript y Firebase.</p></li>
+              <li><h4>Resultado</h4><p>Aplicación desplegada en GitHub Pages, lista para evolucionar.</p></li>
+            </ol></div>
+          </div>
+        </article>
+        <article class="case rv" data-cat="datos">
+          <!-- AJUSTE: fachada y logo de Green House -->
+          <span class="vis case-vis" data-visual="greenhouse"><img src="./assets/fachada.jpg" data-base="fachada" alt="Fachada de Green House Inmobiliaria"><span class="vis case-logo" data-visual="gh-logo"><img src="./assets/logo.png" data-base="logo" alt="Logo de Green House"></span></span>
+          <div class="case-body">
+            <h3>Greenhouse Inmobiliaria</h3>
+            <p class="sub">Estructuración y presentación de información y catálogo inmobiliario con criterio práctico.</p>
+            <div class="tags mono"><span>Catálogo</span><span>Datos</span><span>PropTech</span></div>
+            <button class="toggle" aria-expanded="false"><span>Ver estructura</span><b></b></button>
+            <div class="detail"><ol class="path">
+              <li><h4>Contexto</h4><p>Experiencia práctica real en el sector inmobiliario, con información dispersa.</p></li>
+              <li><h4>Estructura y modelado</h4><p>Organización del catálogo y de los datos de cada inmueble con criterio del sector.</p></li>
+              <li><h4>Resultado</h4><p>Una oferta presentada de forma clara, consistente y fácil de mantener.</p></li>
+            </ol></div>
+          </div>
+        </article>
+        <article class="case rv" data-cat="investigacion">
+          <!-- AJUSTE: ilustración de Semilleros (./assets/semilleros.png, PNG sin fondo) -->
+          <span class="vis case-vis art-fit" data-visual="semilleros"><img src="./assets/semilleros.png" data-base="semilleros" alt="Investigación y Semilleros UDES"></span>
+          <div class="case-body">
+            <h3>Investigación &amp; Semilleros UDES</h3>
+            <p class="sub">Dos semilleros, ponencias y documentación técnica en LaTeX.</p>
+            <div class="tags mono"><span>LaTeX</span><span>Ponencias</span><span>Semilleros</span></div>
+            <button class="toggle" aria-expanded="false"><span>Ver estructura</span><b></b></button>
+            <div class="detail"><ol class="path">
+              <li><h4>Contexto</h4><p>Participación en dos semilleros de investigación en UDES Cúcuta.</p></li>
+              <li><h4>Estructura y modelado</h4><p>Ponencias en el III Congreso Internacional de Investigación e Innovación para el Desarrollo y la Paz Territorial y en el 8 EISI 2026, con documentación en LaTeX y APA.</p></li>
+              <li><h4>Resultado</h4><p>Comunicación clara y rigurosa de resultados técnicos.</p></li>
+            </ol></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="capacidades" class="section">
+    <div class="wrap">
+      <header class="head rv"><h2>Capacidades</h2></header>
+      <div class="pillars">
+        <article class="pillar rv">
+          <header><span class="letter mono">A</span><h3>Estructuración y gestión de proyectos</h3></header>
+          <ul>
+          <li><span class="pi" data-icon="kanban"></span><div><h4>Gestión y administración de proyectos <em class="tag mono">Cert. UDES</em></h4></div></li>
+          <li><span class="pi" data-icon="process"></span><div><h4>Levantamiento de procesos</h4><p>Cómo funciona hoy la operación, antes de rediseñarla.</p></div></li>
+          <li><span class="pi" data-icon="stages"></span><div><h4>Planeación por etapas</h4><p>Fases claras para avanzar con orden.</p></div></li>
+          </ul>
+        </article>
+        <article class="pillar rv">
+          <header><span class="letter mono">B</span><h3>Modelado de datos y lógica</h3></header>
+          <ul>
+          <li><span class="pi" data-icon="sql"></span><div><h4>SQL</h4><p>Diseño y consulta de bases de datos.</p></div></li>
+          <li><span class="pi" data-icon="algo"></span><div><h4>Lógica algorítmica y estructuras de datos</h4><p>Resolver con eficiencia y organizar la información.</p></div></li>
+          <li><span class="pi" data-icon="scale"></span><div><h4>Criterio analítico orientado a escalabilidad</h4><p>Decisiones que siguen funcionando cuando el sistema crece.</p></div></li>
+          </ul>
+        </article>
+        <article class="pillar rv">
+          <header><span class="letter mono">C</span><h3>Bases técnicas aplicadas</h3></header>
+          <ul>
+          <li><span class="pi" data-icon="cube"></span><div><h4>Java (POO) y Python</h4><p>Programación orientada a objetos y scripting.</p></div></li>
+          <li><span class="pi" data-icon="web"></span><div><h4>JavaScript y HTML5 / CSS <em class="tag mono">Cert. Cisco</em></h4><p>Interfaces web modernas y funcionales.</p></div></li>
+          <li><span class="pi" data-icon="latex"></span><div><h4>LaTeX</h4><p>Documentación formal.</p></div></li>
+          <li><span class="pi" data-icon="shield"></span><div><h4>Fundamentos de ciberseguridad</h4><p>Buenas prácticas de seguridad.</p></div></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnologias" class="section">
+    <div class="wrap">
+      <header class="head rv"><h2>Tecnologías que uso</h2></header>
+      <ul class="tech" id="tech"></ul><!-- se genera en script.js (arreglo TECH) -->
+    </div>
+  </section>
+
+  <section id="hobbies" class="section">
+    <div class="wrap">
+      <header class="head rv"><h2>Deportes y hobbies</h2></header>
+      <ul class="hobbies">
+        <li class="hob h-basket rv"><svg class="art" viewBox="0 0 200 200" aria-hidden="true"><path class="court" d="M16 176A92 92 0 0 1 184 176"/><g class="ball"><circle cx="100" cy="92" r="46"/><path d="M54 92h92M100 46v92M68 58c18 20 18 52 0 68M132 58c-18 20-18 52 0 68"/></g><ellipse class="sh" cx="100" cy="178" rx="38" ry="5"/></svg><div><strong>Baloncesto</strong><em>Selección institucional UDES</em></div></li>
+        <li class="hob h-gym rv"><svg class="art" viewBox="0 0 200 200" aria-hidden="true"><g class="lift"><path d="M24 100h152M16 88v24M184 88v24"/><rect x="44" y="60" width="14" height="80" rx="3"/><rect x="62" y="72" width="10" height="56" rx="3"/><rect x="142" y="60" width="14" height="80" rx="3"/><rect x="128" y="72" width="10" height="56" rx="3"/></g></svg><div><strong>Gimnasio</strong><em>Disciplina y constancia</em></div></li>
+        <li class="hob h-mma rv"><svg class="art" viewBox="0 0 200 200" aria-hidden="true"><polygon class="oct" points="70,16 130,16 184,70 184,130 130,184 70,184 16,130 16,70"/><g class="glove"><path d="M76 112V86a24 24 0 0 1 48 0v28c0 10-6 18-14 22v10H88v-10c-8-4-12-12-12-24z"/><path d="M88 146h24M124 98c9 0 13 7 8 14"/></g></svg><div><strong>MMA / UFC</strong><em>Super aficionado</em></div></li>
+        <li class="hob h-draw rv"><svg class="art" viewBox="0 0 200 200" aria-hidden="true"><path class="curve" d="M22 150C48 40 112 40 102 100S162 160 178 54"/><g class="anch"><rect x="16" y="144" width="12" height="12"/><rect x="172" y="48" width="12" height="12"/><circle cx="102" cy="100" r="5"/></g><path class="pen" d="M118 150l34-34 14 14-34 34-20 6z"/></svg><div><strong>Dibujo tradicional y digital</strong><em>A mano y minimalista</em></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="wrap cta">
+      <div class="rv"><h2>Ordenemos tu próximo proyecto.</h2><p>Escríbeme por LinkedIn o revisa el código en GitHub.</p></div>
+      <div class="actions rv">
+        <!-- AJUSTE: pon tu perfil real de LinkedIn en el href -->
+        <a class="btn btn-ink mag" href="https://www.linkedin.com/in/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.6-1 1.9-1.9 3.8-1.9 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg><span>LinkedIn</span></a>
+        <a class="btn btn-ink-o mag" href="https://github.com/andreslabs-dev" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg><span>GitHub · andreslabs-dev</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CIERRE: firma de legado (./assets/firma-legado.png), separada del monograma AL de la cabecera -->
+  <section class="seal" aria-label="Firma de legado">
+    <div class="wrap">
+      <figure class="paper rv" data-rv="scale">
+        <span class="vis sig-vis" data-visual="sign"><img src="./assets/firma-legado.png" data-base="firma-legado" alt="Firma manuscrita de legado familiar"></span>
+        <figcaption>En honor a quien me enseñó el valor de la palabra, la disciplina y las cosas bien hechas.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap foot-in mono"><span>© 2026 Andrés López</span><span><a href="https://github.com/andreslabs-dev" target="_blank" rel="noopener">github.com/andreslabs-dev</a></span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
