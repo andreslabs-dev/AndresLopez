@@ -30,39 +30,7 @@
   function icon(n) { return '<svg viewBox="0 0 24 24" aria-hidden="true">' + IC[n] + '</svg>'; }
   $$('[data-icon]').forEach(function (el) { el.innerHTML = icon(el.dataset.icon); });
 
-  /* Capacidades: tarjetas en HTML (index.html); los iconos se dibujan arriba con data-icon. */
-
-  /* ---------- Capacidades: carrusel (auto-desplazamiento pausable, anterior/siguiente) ---------- */
-  (function () {
-    var cap = $('#cap'); if (!cap) return;
-    var track = $('#capTrack'), prev = $('#capPrev'), next = $('#capNext'), prog = $('.cap-prog', cap);
-    var hold = false, inView = true, resumeT = null, raf = false;
-    function stepW() { var c = $('.cap-card', track); if (!c) return 0; return c.offsetWidth + (parseFloat(getComputedStyle(track).columnGap) || 0); }
-    function maxS() { return track.scrollWidth - track.clientWidth; }
-    function go(dir) {
-      var m = maxS(); if (m <= 2) return; var x = track.scrollLeft;
-      if (dir > 0 && x >= m - 4) track.scrollTo({ left: 0 });
-      else if (dir < 0 && x <= 4) track.scrollTo({ left: m });
-      else track.scrollBy({ left: dir * stepW() });
-    }
-    function draw() {
-      raf = false; var m = maxS(), w = track.scrollWidth ? track.clientWidth / track.scrollWidth * 100 : 100;
-      var r = m > 0 ? track.scrollLeft / m : 0;
-      prog.style.setProperty('--tw', Math.min(w, 100).toFixed(1) + '%'); prog.style.setProperty('--tl', (r * (100 - Math.min(w, 100))).toFixed(1) + '%');
-    }
-    track.addEventListener('scroll', function () { if (!raf) { raf = true; requestAnimationFrame(draw); } }, { passive: true });
-    window.addEventListener('resize', draw); draw();
-    prev.addEventListener('click', function () { go(-1); }); next.addEventListener('click', function () { go(1); });
-    track.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') { e.preventDefault(); go(1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); } });
-    /* Pausa: cursor encima, foco dentro o contacto táctil */
-    cap.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') hold = true; });
-    cap.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') hold = false; });
-    cap.addEventListener('focusin', function () { hold = true; }); cap.addEventListener('focusout', function () { hold = false; });
-    cap.addEventListener('touchstart', function () { hold = true; clearTimeout(resumeT); }, { passive: true });
-    cap.addEventListener('touchend', function () { clearTimeout(resumeT); resumeT = setTimeout(function () { hold = false; }, 6000); }, { passive: true });
-    if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { inView = es[0].isIntersecting; }, { threshold: 0.25 }).observe(cap);
-    if (!reduce) setInterval(function () { if (!hold && inView && !document.hidden) go(1); }, 3800);
-  })();
+  /* Capacidades: ahora son HTML estático (ver index.html). Los iconos se dibujan arriba con data-icon. */
 
   /* ---------- Tecnologías que uso ---------- */
   var TECH = [
